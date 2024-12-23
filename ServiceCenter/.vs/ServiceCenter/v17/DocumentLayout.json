@@ -1,0 +1,276 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\dongpo\\RealestateServiceCenter\\ServiceCenter\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestateservicecenter\\biz\\approval_net8\\models\\workflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestateservicecenter\\biz\\approval_net8\\models\\formfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestateservicecenter\\biz\\approval_net8\\models\\fieldmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestateservicecenter\\biz\\approval_net8\\models\\departmentsandusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestateservicecenter\\biz\\approval_net8\\models\\approvaltemplatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestateservicecenter\\biz\\approval_net8\\models\\approvalnodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestateservicecenter\\biz\\approval_net8\\models\\approvalitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14CE22B3-7021-4383-9F83-0E5244421916}|..\\CyberStone.Core\\CyberStone.Core.csproj|d:\\projects\\dongpo\\realestateservicecenter\\cyberstone.core\\models\\permissionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14CE22B3-7021-4383-9F83-0E5244421916}|..\\CyberStone.Core\\CyberStone.Core.csproj|d:\\projects\\dongpo\\realestateservicecenter\\cyberstone.core\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestateservicecenter\\biz\\approval_net8\\models\\approvalflownode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14CE22B3-7021-4383-9F83-0E5244421916}|..\\CyberStone.Core\\CyberStone.Core.csproj|d:\\projects\\dongpo\\realestateservicecenter\\cyberstone.core\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14CE22B3-7021-4383-9F83-0E5244421916}|..\\CyberStone.Core\\CyberStone.Core.csproj|d:\\projects\\dongpo\\realestateservicecenter\\cyberstone.core\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestateservicecenter\\biz\\approval_net8\\entities\\approvalitementity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14CE22B3-7021-4383-9F83-0E5244421916}|..\\CyberStone.Core\\CyberStone.Core.csproj|d:\\projects\\dongpo\\realestateservicecenter\\cyberstone.core\\cyberstonedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestateservicecenter\\biz\\approval_net8\\approvalextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestateservicecenter\\biz\\approval_net8\\approvaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Workflow.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\Workflow.cs",
+              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\Models\\Workflow.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\Workflow.cs",
+              "RelativeToolTip": "..\\Biz\\Approval_Net8\\Models\\Workflow.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAA1wFoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:56:38.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormField.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\FormField.cs",
+              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\Models\\FormField.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\FormField.cs",
+              "RelativeToolTip": "..\\Biz\\Approval_Net8\\Models\\FormField.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:56:28.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FieldModels.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\FieldModels.cs",
+              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\Models\\FieldModels.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\FieldModels.cs",
+              "RelativeToolTip": "..\\Biz\\Approval_Net8\\Models\\FieldModels.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAcwIAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:55:27.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentsAndUsers.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\DepartmentsAndUsers.cs",
+              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\Models\\DepartmentsAndUsers.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\DepartmentsAndUsers.cs",
+              "RelativeToolTip": "..\\Biz\\Approval_Net8\\Models\\DepartmentsAndUsers.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:55:06.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApprovalTemplateModel.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\ApprovalTemplateModel.cs",
+              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\Models\\ApprovalTemplateModel.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\ApprovalTemplateModel.cs",
+              "RelativeToolTip": "..\\Biz\\Approval_Net8\\Models\\ApprovalTemplateModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:54:54.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApprovalNodeModel.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\ApprovalNodeModel.cs",
+              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\Models\\ApprovalNodeModel.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\ApprovalNodeModel.cs",
+              "RelativeToolTip": "..\\Biz\\Approval_Net8\\Models\\ApprovalNodeModel.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAABsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:54:32.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PermissionModel.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\Models\\PermissionModel.cs",
+              "RelativeDocumentMoniker": "..\\CyberStone.Core\\Models\\PermissionModel.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\Models\\PermissionModel.cs",
+              "RelativeToolTip": "..\\CyberStone.Core\\Models\\PermissionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:53:49.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "..\\CyberStone.Core\\Models\\Role.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\Models\\Role.cs",
+              "RelativeToolTip": "..\\CyberStone.Core\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:53:19.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApprovalItemModel.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\ApprovalItemModel.cs",
+              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\Models\\ApprovalItemModel.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\ApprovalItemModel.cs",
+              "RelativeToolTip": "..\\Biz\\Approval_Net8\\Models\\ApprovalItemModel.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAADgvykAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:52:35.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\CyberStone.Core\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\Controllers\\UserController.cs",
+              "RelativeToolTip": "..\\CyberStone.Core\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwIUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:51:38.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\Models\\User.cs",
+              "RelativeDocumentMoniker": "..\\CyberStone.Core\\Models\\User.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\Models\\User.cs",
+              "RelativeToolTip": "..\\CyberStone.Core\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:51:16.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApprovalFlowNode.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\ApprovalFlowNode.cs",
+              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\Models\\ApprovalFlowNode.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Models\\ApprovalFlowNode.cs",
+              "RelativeToolTip": "..\\Biz\\Approval_Net8\\Models\\ApprovalFlowNode.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAewBwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:50:55.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApprovalItemEntity.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Entities\\ApprovalItemEntity.cs",
+              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\Entities\\ApprovalItemEntity.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\Entities\\ApprovalItemEntity.cs",
+              "RelativeToolTip": "..\\Biz\\Approval_Net8\\Entities\\ApprovalItemEntity.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAIA8wB4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:49:15.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApprovalExtensions.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\ApprovalExtensions.cs",
+              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\ApprovalExtensions.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\ApprovalExtensions.cs",
+              "RelativeToolTip": "..\\Biz\\Approval_Net8\\ApprovalExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:48:47.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CyberStoneDbContext.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\CyberStoneDbContext.cs",
+              "RelativeDocumentMoniker": "..\\CyberStone.Core\\CyberStoneDbContext.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\CyberStoneDbContext.cs",
+              "RelativeToolTip": "..\\CyberStone.Core\\CyberStoneDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:48:17.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApprovalDbContext.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\ApprovalDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\ApprovalDbContext.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealestateServiceCenter\\Biz\\Approval_Net8\\ApprovalDbContext.cs",
+              "RelativeToolTip": "..\\Biz\\Approval_Net8\\ApprovalDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:48:14.717Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

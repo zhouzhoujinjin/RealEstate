@@ -1,0 +1,87 @@
+.cells {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.cell {
+  display: flex;
+  border: 1px solid #fff;
+}
+
+.cellLabel {
+  min-width: 100px;
+  padding: 6px 12px;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+.cellContent {
+  min-width: 140px;
+  text-align: center;
+  padding: 6px 12px;
+  border-right: 1px solid #fff;
+}
+
+.table {
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 12px 24px;
+}
+.table.collapse th,
+.table.collapse td {
+  padding: 6px 12px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.button {
+  font-size: 1.2rem;
+  width: 10rem;
+  background: rgba(73, 146, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+.button span {
+  flex: 1;
+  margin-right: 8px;
+}
+.bar {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.barLabel {
+  min-width: 12rem;
+}
+.barContent {
+  width: 15rem;
+}
+.progressWrapper {
+  border-radius: 50%;
+}
+
+.pies {
+  width: 720px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pie p {
+  margin: -20px 0 0;
+}

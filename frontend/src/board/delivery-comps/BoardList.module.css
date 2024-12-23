@@ -1,0 +1,58 @@
+.gallery {
+  --s: 50px;
+
+  display: grid;
+  height: 50vh;
+  margin-top: 3vh;
+  gap: 8px;
+  grid-auto-flow: column;
+  place-items: center;
+}
+h2 {
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 40px;
+}
+.gallery a {
+  display: block;
+  height: 100%;
+}
+.gallery .item {
+  width: 0;
+  height: 0;
+  min-width: calc(100% + var(--s));
+  min-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  clip-path: polygon(var(--s) 0, 100% 0, calc(100% - var(--s)) 100%, 0 100%);
+  transition: 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.gallery .item:first-child {
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--s)) 100%, 0 100%);
+}
+.gallery .item:last-child {
+  clip-path: polygon(var(--s) 0, 100% 0, 100% 100%, 0 100%);
+}
+.gallery > .item:hover {
+  width: 25vw;
+}
+.gallery > .item:hover h4 {
+    background: #000000af;
+    color: #fff;
+}
+.gallery > .item img {
+  height: 100%;
+}
+.gallery h4 {
+  font-size: 34px;
+  position: absolute;
+  left: 0;
+  top: 70%;
+  background: #0000007f;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}

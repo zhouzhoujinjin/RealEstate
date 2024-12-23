@@ -1,0 +1,26 @@
+body {
+  background: #1c1c1c;
+  color: #cfcfcf;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+}
+
+.main {
+  display: flex;
+}
+
+h4 {
+  margin: 0;
+  color: #fcfcfc;
+  font-size: 18px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+
+  padding: 12px;
+  border-radius: 12px;
+}

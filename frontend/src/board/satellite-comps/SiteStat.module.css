@@ -1,0 +1,46 @@
+.wrapper {
+  margin-top: 10px;
+  width: 100%;
+  height: 360px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.block {
+  width: 100%;
+  height: 80px;
+  min-width: 80px;
+  min-height: 80px;
+  text-align: center;
+  line-height: 80px;
+  position: relative;
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+}
+.active {
+  outline: white 3px solid;
+}
+.block-asset {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  line-height: 1em;
+  z-index: 10;
+}
+.legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.legendRow {
+  display: flex;
+}
+.legendItem {
+  width: 180px;
+  line-height: 20px;
+  font-size: 0.9rem;
+}
