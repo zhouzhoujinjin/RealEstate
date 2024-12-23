@@ -1,4 +1,4 @@
-using Approval.Utils;
+using Approval_Net8.Utils;
 using CyberStone.Core.Models;
 using System.Text.Json.Serialization;
 
@@ -41,6 +41,7 @@ namespace Approval.Models
     }
   }
 
+  [JsonConverter(typeof(NodeJsonConverter))]
   public class ConditionNode : Node
   {
     public override string Type => Consts.FlowNodeTypeCondition;
@@ -48,14 +49,19 @@ namespace Approval.Models
     [JsonPropertyName("conditions")]
     public Dictionary<string, string> Conditions { get; set; }
   }
-  
+
+  [JsonConverter(typeof(NodeJsonConverter))]
   public abstract class FlowNode : Node
   {
 
     [JsonPropertyName("conditionNodes")]
-    public IEnumerable<ConditionNode> ConditionNodes { get; set; }
+    public List<ConditionNode>? ConditionNodes { get; set; }
+
+    [JsonPropertyName("hooks")]
+    public Dictionary<ApprovalActionType, List<string>>? Hooks { get; set; }
   }
 
+  [JsonConverter(typeof(NodeJsonConverter))]
   public class ApprovalNode : FlowNode
   {
     public override string Type => Consts.FlowNodeTypeApproval;
@@ -76,6 +82,7 @@ namespace Approval.Models
     public bool CounterSign { get; set; }
   }
 
+  [JsonConverter(typeof(NodeJsonConverter))]
   public class StartNode : FlowNode
   {
     [JsonPropertyName("applicants")]
@@ -83,6 +90,7 @@ namespace Approval.Models
     public override string Type => "start";
   }
 
+  [JsonConverter(typeof(NodeJsonConverter))]
   public class CarbonCopyNode : FlowNode
   {
     public override string Type => Consts.FlowNodeTypeCarbonCopy;

@@ -1,7 +1,4 @@
 ﻿using Approval.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Approval.Utils
 {
@@ -20,27 +17,23 @@ namespace Approval.Utils
         "project-document" => typeof(ProjectDocumentModel),
         "company-seal" => typeof(CompanySealModel),
         "corp-seal" => typeof(CorpSealModel),
-        "chancheng-contract" => typeof(ChanchengContractModel),
-        "chancheng-bid" => typeof(ChanchenBidModel),
-        "chancheng-payment" => typeof(ChanchengPaymentModel),
         "contract" => typeof(ContractModel),
         "clock" => typeof(ClockModel),
         "business-trip" => typeof(BusinessTripModel),
         "project-bestow" => typeof(ProjectBestowModel),
         "fee" => typeof(FeeModel),
+        "fee-back" => typeof(FeeBackModel),
         "company-receive" => typeof(CompanyReceiveModel),
         "fee-apply" => typeof(FeeApplyModel),
         "invite-bids" => typeof(InviteBidsModel),
         "out" => typeof(OutModel),
-        "performance" => typeof(PerformanceModel),
         "market-expansion" => typeof(MarketExpansionModel),
-        "yiyaogu-contract" => typeof(YiYaoGuContractModel),
-        "yiyaogu-bid" => typeof(YiYaoGuBidModel),
-        "yiyaogu-payment" => typeof(YiYaoGuPaymentModel),
-        "yiyaogu-invite-bids" => typeof(YiYaoGuInviteBidsModel),
         "personnel-change" => typeof(PersonnelChangeModel),
         "vehicle-application" => typeof(VehicleApplicationModel),
-        "preparation-application" => typeof(PreparationApplicationModel),
+        "apply-license" => typeof(LicenseModel),
+        "project-income" => typeof(ProjectIncomeModel),
+        "project-outcome" => typeof(ProjectOutcomeModel),
+
         _ => throw new NotImplementedException(),
       };
     }

@@ -1,5 +1,6 @@
 ﻿using Approval.Interface;
 using CyberStone.Core.Models;
+using System.Text.Json.Serialization;
 
 namespace Approval.Models
 {
@@ -8,28 +9,38 @@ namespace Approval.Models
   /// </summary>
   public class ApprovalFlowNode : IApprovalFlowNode
   {
+    [JsonPropertyName("id")]
     public int Id { get; set; }
+    [JsonPropertyName("userId")]
     public long UserId { get; set; }
-
+    [JsonPropertyName("itemId")]
     public int ItemId { get; set; }
     //审批节点类型
+    [JsonPropertyName("nodeType")]
     public ApprovalFlowNodeType NodeType { get; set; }
 
+    [JsonPropertyName("actionType")]
     public virtual ApprovalActionType ActionType { get; set; }
 
+    [JsonIgnore]
     public IApprovalFlowNode Previous { get; set; }
+    [JsonIgnore]
     public IApprovalFlowNode Next { get; set; }
 
+    public Dictionary<ApprovalActionType, List<string>>? Hooks { get; set; }
+
+    [JsonPropertyName("previousId")]
     public int? PreviousId { get; set; }
-
+    [JsonPropertyName("nextId")]
     public int? NextId { get; set; }
-
+    [JsonPropertyName("lastUpdatedTime")]
     public DateTime? LastUpdatedTime { get; set; }
 
+    [JsonPropertyName("user")]
     public User User { get; set; }
-
+    [JsonPropertyName("isCurrentPendingNode")]
     public bool IsCurrentPendingNode { get; set; }
-
+    [JsonPropertyName("comments")]
     public List<BriefComment> Comments { get; set; }
   }
 
@@ -37,7 +48,7 @@ namespace Approval.Models
   {
 
     private ApprovalActionType approvalActionType;
-
+    [JsonPropertyName("actionType")]
     public override ApprovalActionType ActionType
     {
       get
@@ -55,12 +66,12 @@ namespace Approval.Models
           return ApprovalActionType.Approved;
         }
         //或签全部为拒绝时操作类型为拒绝
-        if (NodeType == ApprovalFlowNodeType.Or && Children.Count(x => x.ActionType == ApprovalActionType.Rejected) == Children.Count())
+        if (NodeType == ApprovalFlowNodeType.Or && Children.Count(x => x.ActionType == ApprovalActionType.Rejected) == Children.Count)
         {
           return ApprovalActionType.Rejected;
         }
         //或签全部为待审时操作类型为待审
-        if (NodeType == ApprovalFlowNodeType.Or && Children.Count(x => x.ActionType == ApprovalActionType.Pending) == Children.Count())
+        if (NodeType == ApprovalFlowNodeType.Or && Children.Count(x => x.ActionType == ApprovalActionType.Pending) == Children.Count)
         {
           return ApprovalActionType.Pending;
         }
@@ -71,7 +82,7 @@ namespace Approval.Models
         approvalActionType = value;
       }
     }
-
+    [JsonPropertyName("children")]
     public ICollection<IApprovalFlowNode> Children { get; set; }
   }
 }

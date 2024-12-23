@@ -4413,11 +4413,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\CyberStone.Core.csproj",
+      "projectUniqueName": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\CyberStone.Core.csproj",
       "projectName": "CyberStone.Core",
-      "projectPath": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\CyberStone.Core.csproj",
+      "projectPath": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\CyberStone.Core.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\obj\\",
+      "outputPath": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

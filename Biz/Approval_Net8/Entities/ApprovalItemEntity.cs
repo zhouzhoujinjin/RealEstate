@@ -1,7 +1,4 @@
 ﻿using Approval.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Approval.Entities
 {
@@ -13,12 +10,14 @@ namespace Approval.Entities
 
     public string Title { get; set; }
 
-    public int TemplateId { get; set; }
+    public long TemplateId { get; set; }
 
 
 
     //表单提交内容
     public Dictionary<string, string> Content { get; set; }
+
+    public string? Summary { get;set; }
 
     public DateTime CreatedTime { get; set; }
 
@@ -38,13 +37,13 @@ namespace Approval.Entities
 
     public bool IsPublished { get; set; }
 
-    public string PublishType { get; set; }
+    public string? PublishType { get; set; }
 
     public List<string> Purview { get; set; }
 
     public bool IsUpdate { get; set; }
-    public string PublishDepartment { get; set; }
-    public string PublishTitle { get; set; }
+    public string? PublishDepartment { get; set; }
+    public string? PublishTitle { get; set; }
     public DateTime? PublishTime { get; set; }
 
     public ApprovalItemEntity()

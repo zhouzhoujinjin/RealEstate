@@ -1,20 +1,18 @@
 ﻿using Approval.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Approval.Entities
 {
   public class ApprovalTemplateEntity
   {
-    public int Id { get; set; }
+    public long Id { get; set; }
     public string Name { get; set; }
     public string Title { get; set; }
     public string IconUrl { get; set; }
     public string Description { get; set; }
     public DepartmentsAndUsers Applicants { get; set; }
 
-    public ICollection<FormField> Fields { get; set; }
+    public List<FormField> Fields { get; set; }
 
     public Workflow Workflow { get; set; }
 
@@ -24,8 +22,11 @@ namespace Approval.Entities
     public bool IsVisible { get; set; }
     public bool IsFinal { get; set; }
     public bool IsCustomFlow { get; set; }
+
+    public List<string> SummaryFields { get; set; } = new List<string>();
+    public Dictionary<string, string>? JavascriptHooks { get; set; }
     public List<ConditionField> ConditionFields { get; set; }
-    public List<int> DepartmentIds { get; set; } = new List<int>();
+    public List<long> DepartmentIds { get; set; } = new List<long>();
 
     public ICollection<ApprovalItemEntity> Items { get; set; }
 

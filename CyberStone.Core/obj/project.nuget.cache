@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cg7b+UiXWrw=",
+  "dgSpecHash": "TAVrfLCPZNg=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\dongpo\\RealestateServiceCenter\\CyberStone.Core\\CyberStone.Core.csproj",
+  "projectFilePath": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\CyberStone.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\aspose.cells\\20.10.0\\aspose.cells.20.10.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\aspose.words\\20.10.0\\aspose.words.20.10.0.nupkg.sha512",

@@ -1,15 +1,21 @@
 [
   {
-    "ContainingType": "RealEstate.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
+    "ContainingType": "CyberStone.Core.Controllers.AccountController",
+    "Method": "UploadAvatar",
+    "RelativePath": "api/account/avatar",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "avatar",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[RealEstate.WeatherForecast, RealEstate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "CyberStone.Core.AjaxResp",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -17,6 +23,2788 @@
         ],
         "StatusCode": 200
       }
-    ]
+    ],
+    "EndpointName": "\u66F4\u65B0\u5934\u50CF"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.AccountController",
+    "Method": "GenerateCaptcha",
+    "RelativePath": "api/account/captcha",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.CaptchaModel, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u83B7\u53D6\u9A8C\u8BC1\u7801"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.AccountController",
+    "Method": "Post",
+    "RelativePath": "api/account/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "CyberStone.Core.Models.LoginUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.AuthenticationTokens, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BC6\u7801\u767B\u5F55"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.AccountController",
+    "Method": "GetMainMenu",
+    "RelativePath": "api/account/menu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.ICollection\u00601[[CyberStone.Core.Models.MenuItem, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237\u83DC\u5355"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.AccountController",
+    "Method": "UpdatePassword",
+    "RelativePath": "api/account/password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "passwords",
+        "Type": "CyberStone.Core.Models.ChangePasswords",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u66F4\u65B0\u5BC6\u7801"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.AccountController",
+    "Method": "GetPermissionsAsync",
+    "RelativePath": "api/account/permissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u6743\u9650"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.AccountController",
+    "Method": "GetProfile",
+    "RelativePath": "api/account/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.User, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237\u8D44\u6599"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.AccountController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/account/profile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "profiles",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Text.Json.JsonElement, System.Text.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.User, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u66F4\u65B0\u8D44\u6599"
+  },
+  {
+    "ContainingType": "Letian.Controllers.AdminApprovalController",
+    "Method": "GetTemplates",
+    "RelativePath": "api/admin/approval/templates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[Approval.Models.ApprovalTemplateModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u5BA1\u6279 - \u83B7\u53D6\u5BA1\u6279\u6A21\u677F\u5217\u8868"
+  },
+  {
+    "ContainingType": "Letian.Controllers.AdminApprovalController",
+    "Method": "GetTemplateAsync",
+    "RelativePath": "api/admin/approval/templates/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalTemplateModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u5BA1\u6279 - \u83B7\u53D6\u5BA1\u6279\u6A21\u677F"
+  },
+  {
+    "ContainingType": "Letian.Controllers.AdminApprovalController",
+    "Method": "UpdateTemplateAsync",
+    "RelativePath": "api/admin/approval/templates/{name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workflow",
+        "Type": "Approval.Models.Workflow",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.Workflow, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u5BA1\u6279 -\u4FEE\u6539\u6A21\u677F"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.DepartmentController",
+    "Method": "GetAdminDepartments",
+    "RelativePath": "api/admin/departments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.Department, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u90E8\u95E8\u6811"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.DepartmentController",
+    "Method": "AddBaseDepartment",
+    "RelativePath": "api/admin/departments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "CyberStone.Core.Models.Department",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.Department, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u6DFB\u52A0\u90E8\u95E8"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.DepartmentController",
+    "Method": "UpdateDepartment",
+    "RelativePath": "api/admin/departments/{departmentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "department",
+        "Type": "CyberStone.Core.Models.Department",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u66F4\u65B0\u90E8\u95E8"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.DepartmentController",
+    "Method": "DeleteDepartment",
+    "RelativePath": "api/admin/departments/{departmentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5220\u9664\u90E8\u95E8"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.DepartmentController",
+    "Method": "UpdateDepartmentStruct",
+    "RelativePath": "api/admin/departments/struct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "structs",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable\u00601[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u66F4\u65B0\u90E8\u95E8\u7ED3\u6784"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.MenuController",
+    "Method": "IndexAsync",
+    "RelativePath": "api/admin/system/menu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.ICollection\u00601[[CyberStone.Core.Models.MenuItem, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5168\u90E8\u83DC\u5355"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.MenuController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/admin/system/menu",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "menu",
+        "Type": "System.Collections.Generic.ICollection\u00601[[CyberStone.Core.Models.MenuItem, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u66F4\u65B0\u83DC\u5355"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "AdminUsers",
+    "RelativePath": "api/admin/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[CyberStone.Core.Models.AdminUser, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237\u5217\u8868"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "Add",
+    "RelativePath": "api/admin/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "CyberStone.Core.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.User, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u6DFB\u52A0\u7528\u6237"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "Update",
+    "RelativePath": "api/admin/users/{userName}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "CyberStone.Core.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.User, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u4FEE\u6539\u7528\u6237"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "GetBaseUserAsync",
+    "RelativePath": "api/admin/users/{userName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.User, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u7528\u6237\u57FA\u7840\u4FE1\u606F"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "ActiveUser",
+    "RelativePath": "api/admin/users/{userName}/active",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u6FC0\u6D3B\u7528\u6237"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/admin/users/{userName}/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u505C\u7528\u7528\u6237"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "IsExistUser",
+    "RelativePath": "api/admin/users/{userName}/isExist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5224\u65AD\u7528\u6237\u662F\u5426\u5B58\u5728"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/admin/users/{userName}/resetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u91CD\u7F6E\u5BC6\u7801"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "AdminUsersDeleted",
+    "RelativePath": "api/admin/users/deleted",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[CyberStone.Core.Models.AdminUser, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5DF2\u5220\u9664\u7528\u6237"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "AdminUsersInvisible",
+    "RelativePath": "api/admin/users/invisible",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[CyberStone.Core.Models.AdminUser, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5DF2\u9690\u85CF\u7528\u6237"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.ValueSpaceController",
+    "Method": "Index",
+    "RelativePath": "api/admin/valueSpaces",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[CyberStone.Core.Models.ValueSpace, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u503C\u7A7A\u95F4\u6458\u8981\u5217\u8868"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.ValueSpaceController",
+    "Method": "Put",
+    "RelativePath": "api/admin/valueSpaces/{name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "valueSpace",
+        "Type": "CyberStone.Core.Models.ValueSpace",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.ValueSpace, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u66F4\u65B0\u503C\u7A7A\u95F4"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "UpdateNodeInfoAsync",
+    "RelativePath": "api/approval/{itemId}/nodes/{nodeId}/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nodeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "node",
+        "Type": "Approval.Models.ApprovalNodeModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalNodeModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u5BA1\u6279\u8282\u70B9"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "UpdateSelfApprovingItemAsync",
+    "RelativePath": "api/approval/{itemId}/nodes/self/next",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "originalList",
+        "Type": "System.Collections.Generic.List\u00601[[Approval.Models.ApprovalNodeModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u63D0\u4EA4\u4E00\u4E0B\u5BA1\u6279"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "ViewFlowAsync",
+    "RelativePath": "api/approval/{templateName}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "templateName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "values",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u9884\u89C8\u6D41\u7A0B"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/approval/{templateName}/{itemId}/{type}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "templateName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "values",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u4FEE\u6539\u5BA1\u6279"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/approval/{templateName}/{type}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "templateName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "values",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u521B\u5EFA\u5BA1\u6279\u6D41"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "Get",
+    "RelativePath": "api/approval/{templateName}/departmentIds",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "templateName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u90E8\u95E8"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetAccountDepartments",
+    "RelativePath": "api/approval/account-departments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[CyberStone.Core.Models.DepartmentUser, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u7528\u6237\u6240\u5728\u7684\u90E8\u95E8\u5217\u8868"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "ApprovalExport",
+    "RelativePath": "api/approval/approval-export",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u5BFC\u51FA"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetApprovalUsers",
+    "RelativePath": "api/approval/approval-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[CyberStone.Core.Models.User, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u8FC7\u6EE4\u7528\u6237\u5217\u8868"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetApprovalCcTemplates",
+    "RelativePath": "api/approval/approvalCcTemplates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[Approval.Models.ApprovalTemplateModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u7528\u6237\u6284\u9001\u7684\u6A21\u677F\u5217\u8868"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetUserApprovalsAsync",
+    "RelativePath": "api/approval/approvals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u7528\u6237\u53C2\u4E0E\u7684\u5BA1\u6279\u7533\u8BF7"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetApprovalTemplates",
+    "RelativePath": "api/approval/approvalTemplates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[Approval.Models.ApprovalTemplateModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u7528\u6237\u5F85\u5BA1\u6279\u53CA\u5DF2\u5904\u7406\u7684\u6A21\u677F\u5217\u8868"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetCcCounts",
+    "RelativePath": "api/approval/cc-counts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u7528\u6237\u6309\u7167\u6A21\u677F\u6284\u9001\u7684\u6570\u91CF"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetCounts",
+    "RelativePath": "api/approval/counts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u7528\u6237\u6309\u7167\u6A21\u677F\u5F85\u5BA1\u6279\u7684\u6570\u91CF"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "DepartmentsAsync",
+    "RelativePath": "api/approval/departments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u6240\u6709\u90E8\u95E8\u5217\u8868"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetUsersSelect",
+    "RelativePath": "api/approval/dept-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u7528\u6237\u90E8\u95E8\u7ED3\u6784"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetTransUsersSelect",
+    "RelativePath": "api/approval/dept-users/{itemId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u80FD\u591F\u8F6C\u529E\u7684\u4EBA\u5458\u7ED3\u6784"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetUserHistoryItemsAsync",
+    "RelativePath": "api/approval/items",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u7528\u6237\u7533\u8BF7\u5386\u53F2"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "DeleteItemAsync",
+    "RelativePath": "api/approval/items/{itemId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u5220\u9664"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetItemAsync",
+    "RelativePath": "api/approval/items/{itemId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u5BA1\u6279\u53CA\u6D41\u7A0B\u8282\u70B9\u4FE1\u606F"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "IsUpdateAsync",
+    "RelativePath": "api/approval/items/{itemId}/{nodeId}/isupdate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nodeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "node",
+        "Type": "Approval.Models.ApprovalNodeModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u9000\u6539"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "BackTimeAsync",
+    "RelativePath": "api/approval/items/{itemId}/backtime",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "backTime",
+        "Type": "Approval.Models.BackTimeForm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u8865\u5145\u5B9E\u9645\u8FD4\u56DE\u65F6\u95F4"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "LastApprovalAsync",
+    "RelativePath": "api/approval/items/{itemId}/lastApporval",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u5224\u65AD\u662F\u5426\u662F\u6700\u540E\u7684\u5BA1\u6279"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "PressAsync",
+    "RelativePath": "api/approval/items/{itemId}/press",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u50AC\u529E"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "PublishVerifiedFileItem",
+    "RelativePath": "api/approval/items/{itemId}/publish",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "info",
+        "Type": "RealEstate.Models.PublishInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u53D1\u5E03 - \u6821\u7A3F\u540E\u53D1\u5E03\u6587\u4EF6"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "RecallAsync",
+    "RelativePath": "api/approval/items/{itemId}/recall",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u64A4\u56DE(\u5DF2\u7ECF\u63D0\u4EA4\u5BA1\u6279\u7684\u6D41\u7A0B\u53D1\u8D77\u4EBA\u53D1\u73B0\u9519\u8BEF\u4E3B\u52A8\u64A4\u56DE)"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetAdminItemsAsync",
+    "RelativePath": "api/approval/items/admin/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u5168\u90E8\u7533\u8BF7"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "CreateCopyApproval",
+    "RelativePath": "api/approval/items/copy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u518D\u63D0\u4EA4"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetLeaveItemsAsync",
+    "RelativePath": "api/approval/items/leave/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u8BF7\u5047\u6570\u636E\u7EDF\u8BA1\uFF0C\u7528\u4E8E\u4EBA\u4E8B\u8FDB\u884C\u6838\u7B97"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "ExportLeaveAsync",
+    "RelativePath": "api/approval/items/leave/export",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u8BF7\u5047\u6570\u636E\u7EDF\u8BA1\u5BFC\u51FA"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "ListPublishItemsAsync",
+    "RelativePath": "api/approval/items/notice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u9996\u9875 - \u516C\u544A\u901A\u77E5"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetOvertimeItemsAsync",
+    "RelativePath": "api/approval/items/overtime/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u52A0\u73ED\u6570\u636E\u7EDF\u8BA1\uFF0C\u7528\u4E8E\u4EBA\u4E8B\u586B\u5199\u5B9E\u9645\u65E5\u671F"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "ExportOvertimeAsync",
+    "RelativePath": "api/approval/items/overtime/export",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u52A0\u73ED\u6570\u636E\u7EDF\u8BA1\u5BFC\u51FA"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "UpdateOvertimeFinishDateAsync",
+    "RelativePath": "api/approval/items/overtime/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Approval.Models.OvertimeFinishDate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u4EBA\u4E8B\u586B\u5199\u5B9E\u9645\u65E5\u671F"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetVerifyItems",
+    "RelativePath": "api/approval/items/verify",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5217\u8868 - \u83B7\u53D6\u542B\u7EC8\u7A3F\u6587\u4EF6\u5217\u8868"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "ExportPdf",
+    "RelativePath": "api/approval/pdf/{itemId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u5BFC\u51FA\u7533\u8BF7"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetTemplateNames",
+    "RelativePath": "api/approval/templateNames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u5BA1\u6279\u6A21\u677F\u540D\u79F0"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetTemplates",
+    "RelativePath": "api/approval/templates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[Approval.Models.ApprovalTemplateModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u7528\u6237\u53EF\u63D0\u4EA4\u5BA1\u6279\u6A21\u677F\u5217\u8868"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetTemplateAsync",
+    "RelativePath": "api/approval/templates/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalTemplateModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u6839\u636E\u540D\u79F0\u83B7\u53D6\u5BA1\u6279\u6A21\u677F"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "TransNodeAsync",
+    "RelativePath": "api/approval/trans/{nodeId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nodeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "trans",
+        "Type": "RealEstate.Models.TransInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalNodeModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u8F6C\u529E"
+  },
+  {
+    "ContainingType": "RealEstate.Controllers.ApprovalController",
+    "Method": "GetUsers",
+    "RelativePath": "api/approval/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[CyberStone.Core.Models.DepartmentUser, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u83B7\u53D6\u7528\u6237\u5217\u8868"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.DepartmentController",
+    "Method": "GetDepartments",
+    "RelativePath": "api/departments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.Department, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u90E8\u95E8\u5217\u8868"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.DepartmentController",
+    "Method": "GetDepartment",
+    "RelativePath": "api/departments/{departmentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.Department, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u90E8\u95E8\u4FE1\u606F"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "FindUser",
+    "RelativePath": "api/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[CyberStone.Core.Models.User, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237\u641C\u7D22"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "GetBriefUserAsync",
+    "RelativePath": "api/users/{userName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.User, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237\u627C\u8981\u4FE1\u606F"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.UserController",
+    "Method": "UploadAvatar",
+    "RelativePath": "api/users/avatar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "avatar",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u4E0A\u4F20\u5934\u50CF"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.ValueSpaceController",
+    "Method": "Get",
+    "RelativePath": "api/valueSpaces",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.SortedDictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[CyberStone.Core.Models.ValueSpace, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u503C\u7A7A\u95F4\u5B57\u5178"
+  },
+  {
+    "ContainingType": "CyberStone.Core.Controllers.ValueSpaceController",
+    "Method": "Get",
+    "RelativePath": "api/valueSpaces/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[CyberStone.Core.Models.ValueSpace, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u503C\u7A7A\u95F4\u8BE6\u60C5"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "UpdateNodeInfoAsync",
+    "RelativePath": "wechat/approval/{itemId}/nodes/{nodeId}/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nodeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "node",
+        "Type": "Approval.Models.ApprovalNodeModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalNodeModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279\u8282\u70B9"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "UpdateSelfApprovingItemAsync",
+    "RelativePath": "wechat/approval/{itemId}/nodes/self/next",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "originalList",
+        "Type": "System.Collections.Generic.List\u00601[[Approval.Models.ApprovalNodeModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279\u901A\u8FC7-\u63D0\u4EA4\u4E00\u4E0B\u5BA1\u6279"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "UpdateAsync",
+    "RelativePath": "wechat/approval/{templateName}/{itemId}/{type}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "templateName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "values",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u4FEE\u6539\u5BA1\u6279"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "CreateAsync",
+    "RelativePath": "wechat/approval/{templateName}/{type}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "templateName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "values",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[Approval.Models.ApprovalFlowNode, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u521B\u5EFA\u5BA1\u6279"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "Get",
+    "RelativePath": "wechat/approval/{templateName}/departmentIds",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "templateName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5FAE\u4FE1 - \u5BA1\u6279 - \u83B7\u53D6\u90E8\u95E8"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "GetAccountDepartments",
+    "RelativePath": "wechat/approval/account-departments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[CyberStone.Core.Models.DepartmentUser, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u83B7\u53D6\u7528\u6237\u6240\u5728\u7684\u90E8\u95E8\u5217\u8868"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "GetApprovalUsers",
+    "RelativePath": "wechat/approval/approval-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[CyberStone.Core.Models.User, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u83B7\u53D6\u8FC7\u6EE4\u7528\u6237\u5217\u8868"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "GetUserApprovalsAsync",
+    "RelativePath": "wechat/approval/approvals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u83B7\u53D6\u7528\u6237\u53C2\u4E0E\u7684\u5BA1\u6279\u7533\u8BF7"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "GetCounts",
+    "RelativePath": "wechat/approval/counts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279 - \u5F85\u5BA1\u6279\u7684\u6570\u91CF"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "GetUserHistoryItemsAsync",
+    "RelativePath": "wechat/approval/items",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.PagedAjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u83B7\u53D6\u7528\u6237\u7533\u8BF7\u5386\u53F2"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "GetItemAsync",
+    "RelativePath": "wechat/approval/items/{itemId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u83B7\u53D6\u5BA1\u6279\u53CA\u6D41\u7A0B\u8282\u70B9\u4FE1\u606F"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "IsUpdateAsync",
+    "RelativePath": "wechat/approval/items/{itemId}/{nodeId}/isupdate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nodeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "node",
+        "Type": "Approval.Models.ApprovalNodeModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u9000\u6539"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "PressAsync",
+    "RelativePath": "wechat/approval/items/{itemId}/press",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5FAE\u4FE1 - \u5BA1\u6279 - \u50AC\u529E"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "RecallAsync",
+    "RelativePath": "wechat/approval/items/{itemId}/recall",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5FAE\u4FE1 - \u5BA1\u6279 - \u64A4\u56DE(\u5DF2\u7ECF\u63D0\u4EA4\u5BA1\u6279\u7684\u6D41\u7A0B\u53D1\u8D77\u4EBA\u53D1\u73B0\u9519\u8BEF\u4E3B\u52A8\u64A4\u56DE)"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "CreateCopyApproval",
+    "RelativePath": "wechat/approval/items/copy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalItemModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5FAE\u4FE1 - \u7533\u8BF7\u8BE6\u60C5 - \u518D\u63D0\u4EA4"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "ListPublishItemsAsync",
+    "RelativePath": "wechat/approval/items/notice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5FAE\u4FE1 - \u516C\u544A - \u516C\u544A\u5217\u8868"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "IsNewPublishItemsAsync",
+    "RelativePath": "wechat/approval/items/notice/exist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5FAE\u4FE1 - \u516C\u544A - \u662F\u5426\u6709\u65B0\u7684\u516C\u544A"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "ReadItemAsync",
+    "RelativePath": "wechat/approval/items/notice/read/{itemId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5FAE\u4FE1 - \u516C\u544A - \u5DF2\u8BFB"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "GetTemplateNames",
+    "RelativePath": "wechat/approval/templateNames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u5BA1\u6279\u6A21\u677F\u540D\u79F0"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "GetTemplates",
+    "RelativePath": "wechat/approval/templates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[Approval.Models.ApprovalTemplateModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237\u53EF\u63D0\u4EA4\u5BA1\u6279\u6A21\u677F\u5217\u8868"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "TransNodeAsync",
+    "RelativePath": "wechat/approval/trans/{nodeId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nodeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "trans",
+        "Type": "RealEstate.Models.TransInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[Approval.Models.ApprovalNodeModel, Approval_Net8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u8F6C\u529E"
+  },
+  {
+    "ContainingType": "Letian.Controllers.WorkApprovalController",
+    "Method": "GetUsers",
+    "RelativePath": "wechat/approval/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CyberStone.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[CyberStone.Core.Models.DepartmentUser, CyberStone.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u83B7\u53D6\u7528\u6237\u5217\u8868"
   }
 ]

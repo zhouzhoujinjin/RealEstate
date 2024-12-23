@@ -1,4 +1,11 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using CyberStone.Authorizations;
+using CyberStone.Core.Converters;
+using CyberStone.Core.Entities;
+using CyberStone.Core.Managers;
+using CyberStone.Core.Models;
+using CyberStone.Core.Utils;
+using CyberStone.Core.Utils.Captcha;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
@@ -8,22 +15,14 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using CyberStone.Core.Converters;
-using CyberStone.Core.Entities;
-using CyberStone.Core.Managers;
-using CyberStone.Core.Utils;
 using System;
 using System.Globalization;
 using System.IdentityModel.Tokens.Jwt;
 using System.IO;
+using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using CyberStone.Authorizations;
-using CyberStone.Core.Utils.Captcha;
-using System.Security.Claims;
-using CyberStone.Core.Models;
-using Microsoft.AspNetCore.StaticFiles;
 
 namespace CyberStone.Core
 {

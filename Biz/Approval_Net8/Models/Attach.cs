@@ -8,36 +8,24 @@ namespace Approval.Models
   public class AttachFile
   {
     [JsonPropertyName("title")]
-    public string Title { get; set; }
+    public string Title { get; set; } = string.Empty;
     [JsonPropertyName("url")]
-    public string Url { get; set; }
-    [JsonPropertyName("url")]
+    public string Url { get; set; } = string.Empty;
+    [JsonPropertyName("size")]
     public long Size { get; set; }
 
   }
 
-  public class SeafileAttach: AttachFile
-  {
-    [JsonPropertyName("repoId")]
-    public string RepoId { get; set; }
-    [JsonPropertyName("path")]
-    public string FilePath { get; set; }
-    [JsonPropertyName("fileName")]
-    public string FileName { get; set; }
-    [JsonPropertyName("repoName")]
-    public string RepoName { get; set; }
-    [JsonPropertyName("fileId")]
-    public string FileId { get; internal set; }
-  }
-
   public class AttachFileWithId : AttachFile
   {
+    [JsonPropertyName("id")]
     public int Id { get; set; }
   }
 
   public class AttachFileWithType : AttachFile
   {
-    public string FileType { get; set; }
+    [JsonPropertyName("fileType")]
+    public string FileType { get; set; } = string.Empty;
   }
 
 }
