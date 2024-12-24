@@ -52,7 +52,7 @@ export const COMPONENTS = {
 };
 
 export const paths = [
-  { path: "/index", title: "首页", component: "Tasks" },
+  { path: "/index", title: "首页", component: "Index" },
   {
     path: "/account/profile",
     exact: true,

@@ -3,41 +3,20 @@
   "WorkspaceRootPath": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestate\\biz\\approval_net8\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14CE22B3-7021-4383-9F83-0E5244421916}|..\\CyberStone.Core\\CyberStone.Core.csproj|d:\\projects\\dongpo\\realestate\\cyberstone.core\\managers\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|d:\\projects\\dongpo\\realestate\\servicecenter\\realestate\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|solutionrelative:realestate\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14CE22B3-7021-4383-9F83-0E5244421916}|..\\CyberStone.Core\\CyberStone.Core.csproj|d:\\projects\\dongpo\\realestate\\cyberstone.core\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|d:\\projects\\dongpo\\realestate\\servicecenter\\realestate\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|solutionrelative:realestate\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|d:\\projects\\dongpo\\realestate\\servicecenter\\realestate\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|solutionrelative:realestate\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{14CE22B3-7021-4383-9F83-0E5244421916}|..\\CyberStone.Core\\CyberStone.Core.csproj|d:\\projects\\dongpo\\realestate\\cyberstone.core\\managers\\rolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|d:\\projects\\dongpo\\realestate\\servicecenter\\realestate\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|solutionrelative:realestate\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CEF75C1-7FCF-4ED6-AD33-DEA8F53E31F9}|..\\Biz\\Approval_Net8\\Approval_Net8.csproj|d:\\projects\\dongpo\\realestate\\biz\\approval_net8\\managers\\approvalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|d:\\projects\\dongpo\\realestate\\servicecenter\\realestate\\controllers\\configcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|solutionrelative:realestate\\controllers\\configcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14CE22B3-7021-4383-9F83-0E5244421916}|..\\CyberStone.Core\\CyberStone.Core.csproj|d:\\projects\\dongpo\\realestate\\cyberstone.core\\controllers\\configcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|d:\\projects\\dongpo\\realestate\\servicecenter\\realestate\\controllers\\adminapprovalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|solutionrelative:realestate\\controllers\\adminapprovalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|d:\\projects\\dongpo\\realestate\\servicecenter\\realestate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BFB1B27-1810-4852-A347-8F1CD24F1AB5}|RealEstate\\RealEstate.csproj|solutionrelative:realestate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14CE22B3-7021-4383-9F83-0E5244421916}|..\\CyberStone.Core\\CyberStone.Core.csproj|d:\\projects\\dongpo\\realestate\\cyberstone.core\\managers\\usermanager.userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,136 +26,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\Startup.cs",
-              "RelativeDocumentMoniker": "RealEstate\\Startup.cs",
-              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\Startup.cs",
-              "RelativeToolTip": "RealEstate\\Startup.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAABsAAAAkAAAAAAAAAA==",
+              "Title": "RoleManager.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\Managers\\RoleManager.cs",
+              "RelativeDocumentMoniker": "..\\CyberStone.Core\\Managers\\RoleManager.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\Managers\\RoleManager.cs",
+              "RelativeToolTip": "..\\CyberStone.Core\\Managers\\RoleManager.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAowLIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T09:02:07.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\appsettings.json",
-              "RelativeDocumentMoniker": "RealEstate\\appsettings.json",
-              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\appsettings.json",
-              "RelativeToolTip": "RealEstate\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-23T09:00:10.05Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "RealEstate\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\Properties\\launchSettings.json",
-              "RelativeToolTip": "RealEstate\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-23T08:59:48.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApprovalManager.cs",
-              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\Biz\\Approval_Net8\\Managers\\ApprovalManager.cs",
-              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\Managers\\ApprovalManager.cs",
-              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\Biz\\Approval_Net8\\Managers\\ApprovalManager.cs",
-              "RelativeToolTip": "..\\Biz\\Approval_Net8\\Managers\\ApprovalManager.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAD4vxkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T08:58:23.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ConfigController.cs",
-              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\Controllers\\ConfigController.cs",
-              "RelativeDocumentMoniker": "RealEstate\\Controllers\\ConfigController.cs",
-              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\Controllers\\ConfigController.cs",
-              "RelativeToolTip": "RealEstate\\Controllers\\ConfigController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T08:55:15.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ConfigController.cs",
-              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\Controllers\\ConfigController.cs",
-              "RelativeDocumentMoniker": "..\\CyberStone.Core\\Controllers\\ConfigController.cs",
-              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\Controllers\\ConfigController.cs",
-              "RelativeToolTip": "..\\CyberStone.Core\\Controllers\\ConfigController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAewA4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T08:54:59.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AdminApprovalController.cs",
-              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\Controllers\\AdminApprovalController.cs",
-              "RelativeDocumentMoniker": "RealEstate\\Controllers\\AdminApprovalController.cs",
-              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\Controllers\\AdminApprovalController.cs",
-              "RelativeToolTip": "RealEstate\\Controllers\\AdminApprovalController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA8wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T08:54:45.015Z",
+              "WhenOpened": "2024-12-24T08:23:59.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\Biz\\Approval_Net8\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "..\\Biz\\Approval_Net8\\ServiceExtensions.cs",
-              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\Biz\\Approval_Net8\\ServiceExtensions.cs",
-              "RelativeToolTip": "..\\Biz\\Approval_Net8\\ServiceExtensions.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAvwA8AAAAGAAAAAAAAAA==",
+              "Title": "MenuManager.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\Managers\\MenuManager.cs",
+              "RelativeDocumentMoniker": "..\\CyberStone.Core\\Managers\\MenuManager.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\Managers\\MenuManager.cs",
+              "RelativeToolTip": "..\\CyberStone.Core\\Managers\\MenuManager.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAnwB0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T08:53:27.31Z",
+              "WhenOpened": "2024-12-24T08:23:19.222Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "RealEstate\\ServiceExtensions.cs",
-              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\ServiceExtensions.cs",
-              "RelativeToolTip": "RealEstate\\ServiceExtensions.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAD4vxQAAAAiAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "..\\CyberStone.Core\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "..\\CyberStone.Core\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAD4v54AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T08:53:20.156Z",
+              "WhenOpened": "2024-12-24T08:17:13.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\Program.cs",
-              "RelativeDocumentMoniker": "RealEstate\\Program.cs",
-              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\Program.cs",
-              "RelativeToolTip": "RealEstate\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADgvwYAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\appsettings.json",
+              "RelativeDocumentMoniker": "RealEstate\\appsettings.json",
+              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\ServiceCenter\\RealEstate\\appsettings.json",
+              "RelativeToolTip": "RealEstate\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-24T08:09:56.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserManager.UserProfile.cs",
+              "DocumentMoniker": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\Managers\\UserManager.UserProfile.cs",
+              "RelativeDocumentMoniker": "..\\CyberStone.Core\\Managers\\UserManager.UserProfile.cs",
+              "ToolTip": "D:\\Projects\\dongpo\\RealEstate\\CyberStone.Core\\Managers\\UserManager.UserProfile.cs",
+              "RelativeToolTip": "..\\CyberStone.Core\\Managers\\UserManager.UserProfile.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAxwEAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T08:53:02.518Z",
+              "WhenOpened": "2024-12-24T08:06:07.937Z",
               "EditorCaption": ""
             }
           ]

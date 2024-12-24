@@ -26,6 +26,8 @@ namespace CyberStone.Core.Managers
 
     public async Task<MenuSettings?> GetMenuAsync()
     {
+      //var m = await settingManager.GetGlobalSettings<MenuSettings>();
+      //return m;
       return await cache.GetAsync(CacheKeys.Menu, async () => await settingManager.GetGlobalSettings<MenuSettings>(), new DistributedCacheEntryOptions
       {
         AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(86400)

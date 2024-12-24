@@ -62,7 +62,7 @@ namespace CyberStone.Core.Managers
     /// <param name="userId"></param>
     /// <returns></returns>
     public async Task<Dictionary<string, object?>> GetUserProfilesAsync(long userId)
-    {
+    { 
       var result = await cache.GetAsync(string.Format(CacheKeys.UserProfiles, userId), async () =>
       {
         var sql = context.UserProfiles.Include(up => up.ProfileKey)

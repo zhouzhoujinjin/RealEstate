@@ -128,6 +128,7 @@ namespace CyberStone.Core.Controllers
     {
       return new AjaxResp<User>
       {
+        Message="in",
         Data = await userManager.GetBriefUserAsync(HttpContext.GetUserId(), new[] { SystemProfileKeyCategory.Public })
       };
     }
